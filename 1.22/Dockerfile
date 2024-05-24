@@ -1,4 +1,4 @@
-FROM golang:1.20
+FROM golang:1.22.3
 
 RUN apt update && apt install -y protobuf-compiler clang-format
 
