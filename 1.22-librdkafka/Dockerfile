@@ -1,6 +1,16 @@
-FROM golang:1.22.3
+FROM golang:1.22.6
 
-RUN apt update && apt install -y protobuf-compiler clang-format
+RUN apt update \
+     && apt install -y --no-install-recommends \
+     protobuf-compiler \
+     ca-certificates  \
+     netbase \
+     curl \
+     procps \
+     iproute2 \
+     iputils-ping \
+     sysstat \
+     clang-format
 
 WORKDIR /go
 

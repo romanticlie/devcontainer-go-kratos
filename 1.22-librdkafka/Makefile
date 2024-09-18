@@ -10,7 +10,7 @@ init:
 	go install github.com/grpc-ecosystem/grpc-gateway/v2/protoc-gen-openapiv2@latest
 	go install github.com/go-kratos/kratos/cmd/protoc-gen-go-errors/v2@latest
 	go install github.com/envoyproxy/protoc-gen-validate@latest
-	go install github.com/google/wire/cmd/wire@latest
+	go install github.com/google/wire/cmd/wire@v0.5.0
 
 # docker login harbor-st.2345.cn                              登陆harbor
 # docker buildx create --name multi-platform-builder --use    创建docker driver并使用
